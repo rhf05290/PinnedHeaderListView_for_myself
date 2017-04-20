@@ -39,11 +39,6 @@ public class MainActivity extends Activity {
         initData();
         
         listView = (PinnedHeaderListView) findViewById(R.id.pinnedListView);
-//        LayoutInflater inflator = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-//        LinearLayout header1 = (LinearLayout) inflator.inflate(R.layout.total_header_layout, null);
-//        ((TextView) header1.findViewById(R.id.tv_city_name)).setText("上海");
-//
-//        listView.addHeaderView(header1);
         TestSectionedAdapter sectionedAdapter = new TestSectionedAdapter();
         listView.setAdapter(sectionedAdapter);
 
